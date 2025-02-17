@@ -85,6 +85,8 @@ from plotly.subplots import make_subplots
     sns.pairplot(df.iloc[:,0:6])
     plt.show()
     df.drop(['name'],axis=1,inplace=True)
+    df.corr()["status"][:-1].sort_values().plot(kind="bar")
+
 
 
     
