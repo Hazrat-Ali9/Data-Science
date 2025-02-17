@@ -83,6 +83,8 @@ from plotly.subplots import make_subplots
     df.hist(figsize=(20,15))
     plt.show()
     sns.pairplot(df.iloc[:,0:6])
+    plt.show()
+
 
     
 
