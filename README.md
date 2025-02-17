@@ -78,6 +78,7 @@ from plotly.subplots import make_subplots
     df.tail()
     df.info()
     df.describe()
+    df.isnull().sum()
 
 
     
