@@ -80,6 +80,7 @@ from plotly.subplots import make_subplots
     df.describe()
     df.isnull().sum()
     df.columns
+    df.hist(figsize=(20,15))
 
 
     
