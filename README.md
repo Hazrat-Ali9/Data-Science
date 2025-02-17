@@ -82,7 +82,7 @@ from plotly.subplots import make_subplots
     df.columns
     df.hist(figsize=(20,15))
     plt.show()
-
+    sns.pairplot(df.iloc[:,0:6])
 
     
 
