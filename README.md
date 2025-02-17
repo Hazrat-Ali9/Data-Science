@@ -76,6 +76,7 @@ from plotly.subplots import make_subplots
     df = pd.read_csv('dataset.csv')
     df.head()
     df.tail()
+    df.info()
 
 
     
