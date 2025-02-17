@@ -74,4 +74,5 @@ from plotly.subplots import make_subplots
 # Data Science Math Command : 
  
     df = pd.read_csv('dataset.csv')
+    df.head()
 
