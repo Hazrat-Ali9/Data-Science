@@ -16,6 +16,15 @@
 # #style.use('fivethirtyeight')
 # pd.options.mode.chained_assignment = None
 
+# import pandas as pd
+import numpy as np
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.naive_bayes import GaussianNB, MultinomialNB
+from sklearn.feature_extraction.text import CountVectorizer
+
+
 
 # Data Science Math Command : 
  
