@@ -87,6 +87,10 @@
     train_images, test_images, train_labels, test_labels = train_test_split(image_data, image_labels, test_size=0.1, random_state=42)    
 
 
+    print(len(train_images))
+    print(len(test_images))
+
+
 
     
 
