@@ -30,7 +30,7 @@
 # import numpy as np
 # import os
 # from tensorflow.keras.preprocessing.image import load_img, img_to_array
-from tensorflow.keras.applications import MobileNetV2
+# from tensorflow.keras.applications import MobileNetV2
 
 
 
