@@ -105,7 +105,7 @@
      model.add(layers.Dense(128, activation='relu'))
      model.add(layers.Dropout(0.2))
     model.add(layers.Dense(64, activation='relu'))
-model.add(layers.Dropout(0.2))
+    model.add(layers.Dropout(0.2))
 model.add(layers.Dense(32, activation='relu'))
 model.add(layers.Dense(8, activation='softmax'))
 
