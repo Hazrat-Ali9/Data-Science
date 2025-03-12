@@ -24,7 +24,7 @@
 # from sklearn.naive_bayes import GaussianNB, MultinomialNB
 # from sklearn.feature_extraction.text import CountVectorizer
 
-import tensorflow as tf
+# import tensorflow as tf
 from tensorflow.keras import layers, models
 import matplotlib.pyplot as plt
 import numpy as np
