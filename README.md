@@ -59,6 +59,11 @@
     class_names = os.listdir(images)
     print(class_names)
 
+    from sklearn.preprocessing import LabelEncoder
+    le = LabelEncoder()
+    image_label = le.fit_transform(class_names)
+    print(image_label)
+
 
 
 
