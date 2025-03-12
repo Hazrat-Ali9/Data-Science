@@ -63,7 +63,18 @@
     le = LabelEncoder()
     image_label = le.fit_transform(class_names)
     print(image_label)
+     
+    image_data = []
+    image_labels = []
 
+    for class_name in class_names:
+    class_path = os.path.join(images, class_name)
+    for image_name in os.listdir(class_path):
+        image_path = os.path.join(class_path, image_name)
+        img = load_img(image_path, target_size=(224, 224))
+        img_array = img_to_array(img)/255
+        image_data.append(img_array)
+        image_labels.append(class_name) 
 
 
 
