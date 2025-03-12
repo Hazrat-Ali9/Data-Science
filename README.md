@@ -103,7 +103,7 @@
      model.add(base_model)
      model.add(layers.GlobalAveragePooling2D())
      model.add(layers.Dense(128, activation='relu'))
-model.add(layers.Dropout(0.2))
+     model.add(layers.Dropout(0.2))
 model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dropout(0.2))
 model.add(layers.Dense(32, activation='relu'))
