@@ -97,6 +97,19 @@
 
     plt.show()
 
+     base_model = MobileNetV2(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+base_model.trainable = False
+model = models.Sequential()
+model.add(base_model)
+model.add(layers.GlobalAveragePooling2D())
+model.add(layers.Dense(128, activation='relu'))
+model.add(layers.Dropout(0.2))
+model.add(layers.Dense(64, activation='relu'))
+model.add(layers.Dropout(0.2))
+model.add(layers.Dense(32, activation='relu'))
+model.add(layers.Dense(8, activation='softmax'))
+
+
 
 
     
