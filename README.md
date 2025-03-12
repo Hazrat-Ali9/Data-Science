@@ -90,6 +90,13 @@
     print(len(train_images))
     print(len(test_images))
 
+    plt.figure(figsize=(10, 5))
+    for i in range(20):
+    plt.subplot(5,5,i+1)
+    plt.imshow(train_images[i])
+
+    plt.show()
+
 
 
     
