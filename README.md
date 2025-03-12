@@ -83,6 +83,10 @@
         print(image_labels)
 
 
+    from sklearn.model_selection import train_test_split
+    train_images, test_images, train_labels, test_labels = train_test_split(image_data, image_labels, test_size=0.1, random_state=42)    
+
+
 
     
 
