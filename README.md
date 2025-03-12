@@ -27,7 +27,7 @@
 # import tensorflow as tf
 # from tensorflow.keras import layers, models
 # import matplotlib.pyplot as plt
-import numpy as np
+# import numpy as np
 import os
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.keras.applications import MobileNetV2
