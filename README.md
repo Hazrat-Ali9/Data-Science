@@ -37,6 +37,8 @@
 
 
 
+
+
 # Data Science Math Command : 
  
     df = pd.read_csv('dataset.csv')
@@ -52,6 +54,11 @@
     plt.show()
     df.drop(['name'],axis=1,inplace=True)
     df.corr()["status"][:-1].sort_values().plot(kind="bar")
+
+
+    class_names = os.listdir(images)
+    print(class_names)
+
 
 
 
