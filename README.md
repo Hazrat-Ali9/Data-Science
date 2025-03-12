@@ -77,6 +77,12 @@
         image_labels.append(class_name) 
 
 
+        from sklearn.preprocessing import LabelEncoder
+         le = LabelEncoder()
+        image_labels = le.fit_transform(image_labels)
+        print(image_labels)
+
+
 
     
 
