@@ -110,6 +110,12 @@
      model.add(layers.Dense(8, activation='softmax'))
 
 
+     train_images = np.array(train_images)
+     test_images = np.array(test_images)
+     train_labels = np.array(train_labels)
+     test_labels = np.array(test_labels)
+
+
 
 
     
