@@ -145,6 +145,13 @@
 # Display first 5 predictions
     for i in range(5):
     display_prediction(i)    
+
+    import tensorflow as tf
+    import numpy as np
+    import cv2
+    import matplotlib.pyplot as plt
+    from tensorflow.keras.preprocessing import image
+
               
 
 
