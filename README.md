@@ -141,6 +141,10 @@
     plt.title(f"Predicted: {predicted_class_names[index]}")
     plt.axis('off')
     plt.show()
+
+# Display first 5 predictions
+    for i in range(5):
+    display_prediction(i)    
               
 
 
