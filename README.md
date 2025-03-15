@@ -116,6 +116,14 @@
      test_labels = np.array(test_labels)
 
 
+     model.compile(optimizer='adam',
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              metrics=['accuracy'])
+
+    history = model.fit(train_images, train_labels, epochs=10,
+                    validation_data=(test_images, test_labels))
+
+
 
 
     
