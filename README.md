@@ -124,6 +124,26 @@
                     validation_data=(test_images, test_labels))
 
 
+     import numpy as np
+     import matplotlib.pyplot as plt
+
+# Make predictions for all test images
+    predictions = model.predict(test_images)
+
+# Get predicted class indices for all images
+    predicted_indices = np.argmax(predictions, axis=1)
+
+# Convert all predicted indices to class names
+    predicted_class_names = le.inverse_transform(predicted_indices)
+
+    def display_prediction(index): 
+    plt.imshow(test_images[index], cmap=plt.cm.binary)
+    plt.title(f"Predicted: {predicted_class_names[index]}")
+    plt.axis('off')
+    plt.show()
+              
+
+
 
 
     
