@@ -151,6 +151,15 @@
     import cv2
     import matplotlib.pyplot as plt
     from tensorflow.keras.preprocessing import image
+ 
+    def load_and_preprocess_image(image_path, img_size):
+    """Load, resize, and normalize an image."""
+    img = image.load_img(image_path, target_size=img_size)  # Resize image
+    img_array = image.img_to_array(img)  # Convert to array
+    img_array = img_array / 255.0  # Normalize (if needed)
+    img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
+    return img, img_array  # Return both original and processed images   
+
 
               
 
